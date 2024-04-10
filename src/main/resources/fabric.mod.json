@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "playertubes",
+  "version": "${version}",
+  "name": "Create Player Tubes",
+  "description": "Adds Futurama-esque player travel tubes to the game!",
+  "authors": [
+    "Syhgma (a-pick)"
+  ],
+  "contact": {
+    "sources": "https://github.com/a-pick/create-player-tubes"
+  },
+  "license": "CC0",
+  "icon": "assets/playertubes/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.syhgma.playertubes.PlayerTubes"
+    ]
+  },
+  "mixins": [
+    "playertubes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
